@@ -13,7 +13,7 @@
 
 **Navigation bar**
 
-- Go to (https://github.com/Alexoid1/blogger_rails) and have a look around. 
+- Go to (https://git.heroku.com/blogger-railss.git) and have a look around. 
 
 ### Prerequisites
 
