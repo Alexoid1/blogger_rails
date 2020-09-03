@@ -1,7 +1,7 @@
 class Article < ActiveRecord::Base
-    has_many :comments
+    has_many :comments, dependent: :destroy
     has_many :taggings, dependent: :destroy
-    has_many :tags, through: :taggings
+    has_many :tags, through: :taggings, dependent: :destroy
     has_attached_file :image, styles: { medium: "300x300>", thumb: "100x100>" }
     validates_attachment_content_type :image, :content_type => ["image/jpg", "image/jpeg", "image/png"]
     def tag_list
